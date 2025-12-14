@@ -15,9 +15,6 @@ from sklearn.metrics import (
 from src.exception import CustomException
 
 
-# ==============================
-# Save Model
-# ==============================
 def save_object(file_path, obj):
     try:
         dir_path = os.path.dirname(file_path)
@@ -30,9 +27,6 @@ def save_object(file_path, obj):
         raise CustomException(e, sys)
 
 
-# ==============================
-# Load Model
-# ==============================
 def load_object(file_path):
     try:
         with open(file_path, "rb") as file_obj:
@@ -42,9 +36,6 @@ def load_object(file_path):
         raise CustomException(e, sys)
 
 
-# ==============================
-# Evaluate Classification Models
-# ==============================
 def evaluate_models(X_train, y_train, X_test, y_test, models, param):
     """
     Evaluate multiple classification models using ROC-AUC
@@ -82,3 +73,5 @@ def evaluate_models(X_train, y_train, X_test, y_test, models, param):
 
     except Exception as e:
         raise CustomException(e, sys)
+
+

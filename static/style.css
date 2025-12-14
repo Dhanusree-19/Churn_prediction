@@ -1,0 +1,178 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #666667, #454545);
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    width: 70%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4a4a4a;
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+/* Text */
+p {
+    color: #555;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #282828, #616061);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* GitHub link */
+.github {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.github i {
+    font-size: 22px;
+}
+
+.github:hover {
+    color: #667eea;
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 14px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4a4a4b;
+    box-shadow: 0px 0px 8px rgba(58, 58, 58, 0.4);
+}
+
+/* Predict button */
+button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(135deg, #373737, #242525);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Result */
+.result {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    background: #f4f6ff;
+    color: #333;
+}
+
+/* Back link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #101010;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}

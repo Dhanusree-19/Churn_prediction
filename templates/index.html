@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Customer Churn Prediction</h1>
+
+    <h2>📌 What is Churn Prediction?</h2>
+    <p>
+        Churn prediction identifies customers who are likely to stop using a service.
+        It helps companies take proactive actions to retain customers.
+    </p>
+
+    <h2> About This Project</h2>
+    <p>
+        This is an end-to-end Machine Learning project that predicts whether a customer
+        will churn based on demographic, service, and billing information.
+    </p>
+
+    <h2> What I Did</h2>
+    <ul>
+        <li>Data Cleaning & EDA</li>
+        <li>Feature Engineering</li>
+        <li>Model Training & Evaluation</li>
+        <li>Pipeline Creation</li>
+        <li>Flask Web App Deployment</li>
+    </ul>
+
+    <h2>🔗 GitHub Repository</h2>
+    <a class="github" href="https://github.com/Dhanusree-19/Mlproject" target="_blank">
+        <i class="fab fa-github"></i> View Project on GitHub
+    </a>
+
+    <br><br>
+    <a href="{{ url_for('predict') }}" class="btn">Try Prediction →</a>
+
+</div>
+</body>
+</html>
