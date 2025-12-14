@@ -5,6 +5,10 @@ scikit-learn
 matplotlib
 seaborn
 dill
+catboost
+xgboost
+lightgbm
+
 
 # --- Project Infrastructure ---
 # Libraries needed for setting up and running notebooks/code

@@ -14,6 +14,12 @@ import os
 
 from src.utils import save_object
 
+
+def convert_to_numeric(X):
+    """Convert numeric-like strings to float, non-numeric strings to NaN"""
+    return pd.DataFrame(X).apply(pd.to_numeric, errors='coerce').values
+
+
 @dataclass
 class DataTransformationConfig:
     preprocessor_obj_file_path: str = os.path.join('artifacts', 'preprocessor.pkl') 
@@ -38,7 +44,7 @@ class DataTransformation:
             num_pipeline = Pipeline(
                 steps=[
                     ('convert_to_num', FunctionTransformer(
-                        lambda X: pd.DataFrame(X).apply(pd.to_numeric, errors='coerce').values,
+                        convert_to_numeric,
                         validate=False
                     )),
                     ('imputer', SimpleImputer(strategy='median')),
