@@ -1,4 +1,4 @@
-# Customer Churn Prediction 🚀
+# Customer Churn Prediction 
 
 This project predicts whether a customer is likely to **churn (leave a service)** using Machine Learning.  
 It is built as a **complete end-to-end ML project** with a web interface.
